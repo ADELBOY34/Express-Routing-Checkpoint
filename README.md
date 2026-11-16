@@ -1,7 +1,5 @@
-# Mongoose Checkpoint
+# Express Routing Checkpoint
 
-Install dependencies with `npm install`. Put your MongoDB Atlas URI in a private `.env` file as `MONGO_URI="your-uri"`; never commit `.env`. Copy `.env.example` as a template and replace its placeholder values.
+Install dependencies with `npm install`, then run `npm start` and open <http://localhost:3000>.
 
-`models/person.js` defines the required name, age, and favorite foods fields. `person-operations.js` contains callback-based examples for create, search, update, delete, and chained queries. `database.js` loads the URI and connects to MongoDB when you run `npm run db:connect`.
-
-The operations retain the checkpoint's `done(err, data)` callbacks while using modern Mongoose methods. The old `useNewUrlParser` and `useUnifiedTopology` options are defaults in current Mongoose. `deleteMany()` and `findByIdAndDelete()` replace APIs removed from newer releases.
+This Express site contains Home, Our Services, and Contact us pages with shared navigation and responsive styling. Custom middleware allows page requests Monday to Friday from 09:00 up to (but not including) 17:00, using the `Africa/Algiers` time zone by default. Set `BUSINESS_TIME_ZONE` to another IANA time zone if needed.
